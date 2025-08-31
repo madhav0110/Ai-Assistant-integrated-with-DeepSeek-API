@@ -10,7 +10,7 @@ app.use(cors())
 const wss = new WebSocketServer({ port: 8005 });
 const openai = new OpenAI({
     baseURL: "https://openrouter.ai/api/v1",
-    apiKey: `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`, // Store in .env file
+    apiKey: ``, // Store in .env file
 });
 async function main(message, ws, MODEL_NAME = "deepseek/deepseek-r1-distill-llama-8b") {
     console.log("MODEL NAME: ", MODEL_NAME);
